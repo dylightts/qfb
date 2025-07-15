@@ -1,1 +1,75 @@
+:root {
+  --bg-color: #fdf6f0;
+  --primary: #f5d0c5;
+  --secondary: #a7d1d6;
+  --accent: #fde2c8;
+  --text: #333333;
+  --locked: #d3d3d3;
+  --hover: #ebcfc2;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#malla-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.semestre {
+  background-color: var(--accent);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.semestre h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: var(--text);
+}
+
+.materia {
+  background-color: var(--locked);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.materia:hover {
+  background-color: var(--hover);
+}
+
+.materia.porCursar {
+  background-color: var(--primary);
+}
+
+.materia.enCurso {
+  background-color: var(--secondary);
+}
+
+.materia.aprobada {
+  background-color: var(--accent);
+}
+
+.materia.bloqueada {
+  background-color: var(--locked);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 
