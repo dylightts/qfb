@@ -72,3 +72,42 @@ h1 {
   cursor: not-allowed;
   opacity: 0.6;
 }
+.leyenda {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cuadro {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.cuadro.porCursar {
+  background-color: var(--porCursar);
+  border: 1px solid #999;
+}
+
+.cuadro.enCurso {
+  background-color: var(--enCurso);
+  border: 1px solid #999;
+}
+
+.cuadro.aprobada {
+  background-color: var(--aprobada);
+  border: 1px solid #999;
+}
+
+.cuadro.bloqueada {
+  background-color: var(--locked);
+  border: 1px solid #999;
+}
