@@ -73,41 +73,44 @@ h1 {
   opacity: 0.6;
 }
 .leyenda {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-align: center;
-  margin-bottom: 20px;
-  color: var(--text-color);
+  margin-bottom: 25px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
+.leyenda div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .cuadro {
-  display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 5px;
   border-radius: 4px;
-  vertical-align: middle;
-}
-
-.cuadro.porCursar {
-  background-color: var(--porCursar);
   border: 1px solid #999;
 }
 
-.cuadro.enCurso {
-  background-color: var(--enCurso);
-  border: 1px solid #999;
+.texto {
+  font-weight: 500;
 }
 
-.cuadro.aprobada {
-  background-color: var(--aprobada);
-  border: 1px solid #999;
+.texto.porCursar {
+  color: var(--porCursar);
 }
 
-.cuadro.bloqueada {
-  background-color: var(--locked);
-  border: 1px solid #999;
+.texto.enCurso {
+  color: var(--enCurso);
+}
+
+.texto.aprobada {
+  color: var(--aprobada);
+}
+
+.texto.bloqueada {
+  color: var(--locked);
 }
